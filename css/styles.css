@@ -21,11 +21,12 @@ body {
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 10px;
     padding: 80px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     align-content: center;
+    max-width: 1240px;
 }
 .item {
-    background: #0585a5;
+    /* background: #0585a5; */
     padding: 20px;
     border-bottom: 3px solid rgb(187, 171, 171);
 }
@@ -47,13 +48,18 @@ header figure img {
         /* Center the image and fix shape  */
 }
 figcaption p:first-child {
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
     color:#eee;
     margin-bottom: -10px;
 }
+figcaption p {
+    font-size: 1.6em;
+    color: #fff;
+}
     /* yellow span text */
-.y-text {
+.y-text a {
     color: #ff3;
     font-weight: 600;
+    text-decoration: none;
 }    
