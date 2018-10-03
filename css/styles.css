@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(10, 14, 14);
+}
+
+/* Website Content */
+.container {
+    /* width: 100%; 
+        width may not be neede
+    */
+    display: grid;
+    /* background: #d0f820; */
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 80px;
+    /* margin: 0 auto; */
+    align-content: center;
+}
+.item {
+    background: #0585a5;
+    padding: 20px;
+    border-bottom: 3px solid rgb(187, 171, 171);
+}
+
+.grid-item1 {
+    /* border-bottom: 1px solid rgb(233, 9, 9); */
+}
+
+/* Styling the Header file */
+header {
+    /* background: transparent; */
+}
+header figure img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+        /* Center the image and fix shape  */
+}
