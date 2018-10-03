@@ -63,3 +63,10 @@ figcaption p {
     font-weight: 600;
     text-decoration: none;
 }    
+
+/*  Second Section( Item 2 part)  */
+.grid-item2 {
+    background: #3dfaaa;
+    display: grid;
+    /* This will make this section a grid inside another grid */
+}
