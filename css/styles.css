@@ -5,6 +5,10 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(10, 14, 14);
+    font-size: 17px;
+    color: rgb(190, 174, 174);
+    /* set default color for font in website */
+    font-weight: 400;
 }
 
 /* Website Content */
@@ -31,13 +35,25 @@ body {
 }
 
 /* Styling the Header file */
+
 header {
     /* background: transparent; */
 }
 header figure img {
-    width: 40%;
+    width: 50px;
     display: block;
     margin: 0 auto;
     border-radius: 100%;
         /* Center the image and fix shape  */
 }
+figcaption p:first-child {
+    font-size: 2em;
+    text-align: center;
+    color:#eee;
+    margin-bottom: -10px;
+}
+    /* yellow span text */
+.y-text {
+    color: #ff3;
+    font-weight: 600;
+}    
