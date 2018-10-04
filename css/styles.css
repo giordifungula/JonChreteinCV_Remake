@@ -16,19 +16,44 @@ body {
     /* width: 100%; 
         width may not be neede
     */
-    display: grid;
+    /* display: grid; */
     /* background: #d0f820; */
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
-    padding: 80px;
+    /* grid-template-rows: repeat(4, 1fr); */
+    /* grid-gap: 10px; */
+    padding: 20px;
     margin: 0 auto;
-    align-content: center;
+    /* removed align content */
     max-width: 1240px;
+    text-align: center;
+    border-bottom: 3px solid rgb(187, 171, 171);
+}
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* Mobile View 1 column and in a few rows */
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    /* background: #ff3; */
+    padding: 2px;
+}
+.grid-item figure {
+    text-align: left;
+    /* Takes your content of text to the left */
+}
+.g-c-1 {
+    /* grid-column: 1 / -1; */
+}
+.center-head {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
 }
 .item {
     /* background: #0585a5; */
     padding: 20px;
-    border-bottom: 3px solid rgb(187, 171, 171);
 }
 
 .grid-item1 {
@@ -62,11 +87,48 @@ figcaption p {
     color: #ff3;
     font-weight: 600;
     text-decoration: none;
-}    
-
+}
+   
 /*  Second Section( Item 2 part)  */
-.grid-item2 {
-    background: #3dfaaa;
-    display: grid;
-    /* This will make this section a grid inside another grid */
+
+
+/* Nested grid with Image gallery */
+
+.fig-word {
+    font-size: 11px;
+    color:#fff;
+}
+h3,h4 {
+    margin:0;
+    /* remove default margin on heading */
+}
+.fig-word-bottom {
+    font-size: 13px;
+    font-weight: 300;
+    color:rgb(95, 89, 89);
+}
+
+ /*Top Section Responsive  */
+ @media (max-width: 650px){
+    .container {
+        width: 100%;
+        overflow-x: hidden;
+        
+    }
+    .item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .grid-n-2 {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
+}  
+
+@media (min-width: 650px) {
+    .grid-content {
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-auto-flow: column; */
+    }
 }
