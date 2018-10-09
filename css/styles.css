@@ -83,7 +83,10 @@ body {
 a>img {
     transition: 2s;
 }
-a>img:hover {
+figure > img {
+    transition: 2s;
+}
+a>img:hover, figure > img:hover {
     opacity: 0.5;
 }
 
@@ -151,17 +154,16 @@ h3,h4 {
          as a block and makes it 100% before
           the grid is applied with gaps*/
     }
-    
+    .bottom-content {
+        padding: 15px;
+    }
        
 }  
 /* Bottom Section */
-.bottom-content {
-    padding: 15px;
-}
+
 nav .y-text {
     text-decoration: none;
     color:#ff3;
-    
 }
 
 @media (min-width: 600px) {
@@ -189,14 +191,18 @@ nav .y-text {
         padding: -1 20px;
 
     }
-    .bottom-content > nav {
+    nav {
+        width: 50%;
         float: left;
+        text-align: left;
     }
     .bottom-content a {
         text-decoration: none;
     }
-    .bottom-content >right {
+    .bottom-content > .right {
         float: right;
+        text-align: right;
+        width: 50%;
     }
     
 }
