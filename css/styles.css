@@ -19,6 +19,7 @@ body {
     max-width: 1240px;
     text-align: center;
     border-bottom: 3px solid rgb(187, 171, 171);
+    padding-bottom: 20px;
 }
 .grid-content {
     display: grid;
@@ -36,13 +37,18 @@ body {
     grid-template-rows: repeat(4,1fr);
     grid-gap: 15px;
     align-content: center; 
-        
     /* only adding 4 rows to our grid-container 
     otherwise inherit the previous properties
     */
 }
+.grid-content3 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+    align-content: center;
+}
 
-.grid-content2 img {
+.grid-content2 img, .grid-content3 img {
     width: 100%;
     /* styling the 2nd section images */
 }
@@ -156,6 +162,9 @@ h3,h4 {
     .grid-item figure img {
         /* width: 50%; */
     }
+    .grid-content3 {
+        grid-template-columns: repeat(4,1fr);
+    }
 }
 
 @media (min-width: 768px) {
@@ -165,12 +174,20 @@ h3,h4 {
     }
     figure {
         margin: 0;
-        padding: 0 20px;
+        padding: 0 3px;
+    }
+    .container {
+        padding: -1 20px;
+
     }
     
 }
 @media (min-width: 850px) {
     body{
         margin:0 5px;
+    }
+    .grid-content {
+        grid-template-columns: repeat(3, 1fr);
+        /* Currently website is responsive without template area */
     }
 }
