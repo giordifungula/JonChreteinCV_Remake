@@ -154,6 +154,15 @@ h3,h4 {
     
        
 }  
+/* Bottom Section */
+.bottom-content {
+    padding: 15px;
+}
+nav .y-text {
+    text-decoration: none;
+    color:#ff3;
+    
+}
 
 @media (min-width: 600px) {
     .grid-content,.grid-content2 {
@@ -179,6 +188,15 @@ h3,h4 {
     .container {
         padding: -1 20px;
 
+    }
+    .bottom-content > nav {
+        float: left;
+    }
+    .bottom-content a {
+        text-decoration: none;
+    }
+    .bottom-content >right {
+        float: right;
     }
     
 }
