@@ -35,11 +35,13 @@ body {
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4,1fr);
     grid-gap: 10px;
-    align-content: center;
+    align-content: center; 
+        
     /* only adding 4 rows to our grid-container 
     otherwise inherit the previous properties
     */
 }
+
 .grid-content2 img {
     width: 100%;
     /* styling the 2nd section images */
@@ -135,12 +137,18 @@ h3,h4 {
     .container {
         width: 100%;
         overflow-x: hidden;
-        
     }
+    .grid-content2 {
+         display: block;
+         /* This displays the whole grid 
+         as a block and makes it 100% before
+          the grid is applied with gaps*/
+    }
+    
        
 }  
 
-@media (min-width: 600px) {
+@media (min-width: 660px) {
     .grid-content,.grid-content2 {
         grid-template-columns: repeat(2, 1fr);
     }
