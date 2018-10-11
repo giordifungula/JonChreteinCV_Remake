@@ -208,7 +208,11 @@ nav .y-text {
 }
 @media (min-width: 850px) {
     body{
-        margin:0 5px;
+        /* margin:0 5px; */
+        /* padding: 10px 50px;  */
+    }
+    .container {
+        margin: 0 300px;
     }
     .grid-content {
         grid-template-columns: repeat(3, 1fr);
