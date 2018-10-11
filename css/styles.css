@@ -66,6 +66,11 @@ body {
     text-align: left;
     /* Takes your content of text to the left */
 }
+.grid-item > figure > figcaption {
+    font-size: 16px;
+    line-height: 1.35em;
+    margin-bottom: 4px;
+}
 
 .grid-item figure img {
     width: 100%;
@@ -142,9 +147,14 @@ h3,h4 {
     /* remove default margin on heading */
 }
 .fig-word-bottom {
-    font-size: 13px;
-    font-weight: 300;
     color:rgb(95, 89, 89);
+    /* styles from the site  */
+    color: #9e9e9e;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
  /*Top Section Responsive  */
@@ -217,7 +227,8 @@ nav .y-text {
         /* padding: 10px 50px;  */
     }
     .container {
-        margin: 0 300px;
+        margin: 0 30px;
+        /* removed 300 to 30 */
     }
     .grid-content {
         grid-template-columns: repeat(3, 1fr);
