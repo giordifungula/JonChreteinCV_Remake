@@ -20,7 +20,7 @@ body {
     max-width: 1240px;
     text-align: center;
     border-bottom: 3px solid rgb(187, 171, 171);
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 .grid-content {
     display: grid;
@@ -117,7 +117,7 @@ header {
     /* background: transparent; */
 }
 header figure img {
-    width: 50px;
+    width: 120px;
     display: block;
     margin: 0 auto;
     border-radius: 100%;
@@ -210,6 +210,11 @@ nav .y-text {
     text-decoration: none;
     color:#ff3;
     /* may need to remove the redundant code */
+    padding-right: 25px;
+}
+nav a:hover {
+    color:#666;
+    transition: 0.5s;
 }
 
 @media (min-width: 600px) {
@@ -257,7 +262,7 @@ nav .y-text {
 }
 @media (min-width: 850px) {
     body{
-        /* margin:0 5px; */
+        margin:0 56px;
         /* padding: 10px 50px;  */
     }
     .container {
@@ -268,7 +273,5 @@ nav .y-text {
         grid-template-columns: repeat(3, 1fr);
         /* Currently website is responsive without template area */
     }
-    header figure img {
-        width: 80px;
-    }
+    
 }
