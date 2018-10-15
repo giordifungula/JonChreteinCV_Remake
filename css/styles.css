@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body {
+    /* default settings for website */
     margin: 0;
     padding: 0;
     background: rgb(10, 14, 14);
@@ -19,20 +20,23 @@ body {
     /* removed align content */
     max-width: 1240px;
     text-align: center;
-    border-bottom: 3px solid rgb(187, 171, 171);
-    padding-bottom: 40px;
+    border-bottom: 0.4px solid rgb(187, 171, 171);
+    padding-bottom: 20px;
+
+    /* This container styles the container wrapper */
 }
 .grid-content {
+    /* Styles the First grid container styling */
     display: grid;
     grid-template-columns: repeat(1, auto);
     /* Mobile View 1 column and in a few rows */
     grid-template-rows: repeat(3, 1fr);
     grid-auto-rows: minmax(200px, auto);
-    /* grid-auto-columns: minmax(3fr, auto); */
     grid-gap: 10px;
     align-content: center;
 }
 .grid-content2 {
+    /* Styles the 2nd grid-content for mobile */
     display: grid;
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4,1fr);
@@ -47,30 +51,29 @@ body {
     grid-template-columns: repeat(1,1fr);
     grid-gap: 10px;
     align-content: center;
+    /* style the 2nd grid for mobile view */
 }
 
 .grid-content2 img, .grid-content3 img {
     width: 100%;
-    /* styling the 2nd section images */
+    /* styling the grid section images for responsive mode*/
 }
 
 .grid-2-full {
+    /* Photopgrahy image 2 styling */
     grid-column: span 2;
     grid-row: span 2;
 }
 
-.grid-item {
-    /* background: #ff3; */
-    /* padding: 2px; */
-}
 .grid-item figure {
     text-align: left;
     /* Takes your content of text to the left */
 }
 .grid-item > figure > figcaption {
+    /* Styles the gallery content items */
     font-size: 16px;
     line-height: 1.35em;
-    margin-bottom: 4px;
+    margin-bottom: -14px;
     margin-top: 10px;
 }
 
@@ -105,10 +108,6 @@ a>img:hover, figure > img:hover {
     opacity: 0.5;
     cursor: pointer;
 
-}
-
-.grid-item1 {
-    /* border-bottom: 1px solid rgb(233, 9, 9); */
 }
 
 /* Styling the Header file */
@@ -150,11 +149,7 @@ figcaption > .y-text a {
     font-weight: 100;
 }
 
-figcaption > 
-.y-text a:hover {
-    /* color:#666; */
-    /* transition: 0.5s; */
-}
+
 .center-head h2 {
     color: #fff;
     font-size: 47px;
@@ -211,6 +206,7 @@ nav .y-text {
     color:#ff3;
     /* may need to remove the redundant code */
     padding-right: 25px;
+    font-size: 20px;
 }
 nav a:hover {
     color:#666;
@@ -239,19 +235,21 @@ nav a:hover {
     }
     figure {
         margin: 0;
+        /* aligns content inside figure to fit top and bottom */
         padding: 0 3px;
     }
-    .container {
-        /* padding: -1 20px; */
-
+    body {
+        margin: 46px;
+        /* this creates space on tablet view around website */
     }
     nav {
         width: 50%;
         float: left;
+        /* floats the nav items to the left */
         text-align: left;
     }
     .bottom-content a {
-        text-decoration: none;
+        /* text-decoration: none; */
     }
     .bottom-content > .right {
         float: right;
