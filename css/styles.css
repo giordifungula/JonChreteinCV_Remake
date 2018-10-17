@@ -4,7 +4,7 @@
 body {
     /* default settings for website */
     margin: 0;
-    padding: 30;
+    padding: 20px;
     background: rgb(10, 14, 14);
     font-size: 17px;
     color: #ccc;
@@ -31,7 +31,7 @@ hr {
     max-width: 1240px;
     text-align: center;
     border-bottom: 0.4px solid rgb(187, 171, 171);
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     /* This container styles the container wrapper */
 }
 .grid-content {
@@ -87,7 +87,7 @@ figure {
 .grid-item > figure > figcaption {
     /* Styles the gallery content items */
     font-size: 16px;
-    line-height: 1.2em;
+    line-height: 1.92em;
     margin-bottom: -14px;
     margin-top: 10px;
 }
@@ -289,7 +289,7 @@ nav a:hover {
 }
 @media (min-width: 850px) {
     body{
-        margin:0 56px;
+        margin:0 20px;
         /* padding: 10px 50px;  */
     }
     .container {
