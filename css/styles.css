@@ -210,7 +210,8 @@ h3,h4 {
         margin-bottom: 5px;
     }
     .bottom-content {
-        padding: 15px;
+        padding: 10px;
+        /* makes the 3 bottom nav items inline on mobile */
     }
     .grid-content > figure {
         width: 100%;
