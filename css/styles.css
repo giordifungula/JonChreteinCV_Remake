@@ -19,6 +19,20 @@ body {
     border-bottom: none;
     /* remove border bottom on first container */
 }
+/* animation added */
+#Move {
+    animation-name: Move;
+    animation-duration: 5s;
+    /* animation: infinite; */
+}
+@keyframes Move {
+    0%{
+        opacity: 0;
+    }
+    20%{transform: scale(2em)}
+    50%{transform: rotate(101deg)}
+    100%{opacity: 1;}
+}
 hr {
     margin: 2px;
     padding: 0.1px;
