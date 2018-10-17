@@ -15,6 +15,16 @@ body {
 }
 
 /* Website Content */
+.container:first-child {
+    border-bottom: none;
+    /* remove border bottom on first container */
+}
+hr {
+    margin: 2px;
+    padding: 0.1px;
+    border: 0.3px solid rgb(139, 138, 138);
+    /* Style first underline */
+}
 .container {
     margin: 0 auto;
     /* removed align content */
@@ -22,7 +32,6 @@ body {
     text-align: center;
     border-bottom: 0.4px solid rgb(187, 171, 171);
     padding-bottom: 20px;
-
     /* This container styles the container wrapper */
 }
 .grid-content {
@@ -74,7 +83,7 @@ body {
     font-size: 16px;
     line-height: 1.35em;
     margin-bottom: -14px;
-    margin-top: 10px;
+    margin-top: 10px;5
 }
 
 .grid-item figure img {
