@@ -23,15 +23,19 @@ body {
 #Move {
     animation-name: Move;
     animation-duration: 5s;
-    /* animation: infinite; */
+    /* animation declaration */
 }
 @keyframes Move {
     0%{
         opacity: 0;
+        transform: translateX(-300px);
+        /* slide slides in from the left */
     }
-    20%{transform: scale(2em)}
-    50%{transform: rotate(101deg)}
+    20%{transform: translateX(100px)}
+    50%{transform: rotate(20deg)}
+    /* shifts the screen slightly */
     100%{opacity: 1;}
+    /* visible now */
 }
 hr {
     margin: 2px;
@@ -126,9 +130,7 @@ figure {
 a>img {
     transition: 2s;
 }
-figure > img {
-    /* transition: 2s; */
-}
+
 a>img:hover, figure > img:hover {
     opacity: 0.5;
     cursor: pointer;
@@ -137,9 +139,6 @@ a>img:hover, figure > img:hover {
 
 /* Styling the Header file */
 
-header {
-    /* background: transparent; */
-}
 header figure img {
     width: 120px;
     display: block;
@@ -261,9 +260,7 @@ nav a:hover {
     .grid-content,.grid-content2 {
         grid-template-columns: repeat(2, 1fr);
     }
-    .grid-item figure img {
-        /* width: 50%; */
-    }
+    
     .grid-content3 {
         grid-template-columns: repeat(4,1fr);
     }
@@ -292,9 +289,7 @@ nav a:hover {
         /* floats the nav items to the left */
         text-align: left;
     }
-    .bottom-content a {
-        /* text-decoration: none; */
-    }
+    
     .bottom-content > .right {
         float: right;
         text-align: right;
